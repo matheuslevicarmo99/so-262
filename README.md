@@ -4,6 +4,7 @@ Repositório destinado ao armazenamento das atividades práticas e exercícios d
 
 ## Estrutura do Repositório
 * `atividades/`: Contém as pastas de todas as atividades desenvolvidas ao longo do semestre.
+* `exercicios/`: Por enquanto vazia. 
 
 ## Aluno
 * **Nome:** Matheus Levi Fava do Carmo Pessoa
