@@ -1,6 +1,6 @@
 Grupo Atividade_03:
 
--  João Eduardo Viana Silva
+-  João Eduardo Viana da Silva
 -  João Guilherme dos Santos Leão
 -  Matheus Levi Fava do Carmo Pessoa
 
