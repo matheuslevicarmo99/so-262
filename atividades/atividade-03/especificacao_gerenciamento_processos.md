@@ -1,8 +1,5 @@
 # Especificação Técnica — Gerenciador de Processos de um Simulador de Sistema Operacional
 
-**Versão:** 1.0
-**Tipo de documento:** Especificação funcional e de estrutura de dados (entrada para geração de código via Harness — Claude Code / Open Code)
-**Status:** Pronto para implementação
 
 ---
 
@@ -42,15 +39,15 @@ O simulador opera em um **laço principal (main loop)** guiado por um relógio l
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                     LAÇO PRINCIPAL (por tick)                 │
+│                     LAÇO PRINCIPAL (por tick)                   │
 ├─────────────────────────────────────────────────────────────┤
-│ 1. Incrementar o Relógio Lógico Global                        │
-│ 2. Verificar chegada de novos processos (arquivo de tarefas)  │
-│    → Criar PCB e inserir na fila de Prontos (fork simulado)   │
-│ 3. Verificar processos Bloqueados                              │
-│    → Decrementar tempo de E/S restante                        │
-│    → Se E/S concluída, mover para fila de Prontos              │
-│ 4. Verificar Processo em Execução (se houver)                  │
+│ 1. Incrementar o Relógio Lógico Global                          │
+│ 2. Verificar chegada de novos processos (arquivo de tarefas)    │
+│    → Criar PCB e inserir na fila de Prontos (fork simulado)     │
+│ 3. Verificar processos Bloqueados                               │
+│    → Decrementar tempo de E/S restante                          │
+│    → Se E/S concluída, mover para fila de Prontos               │
+│ 4. Verificar Processo em Execução (se houver)                   │
 │    a. Decrementar quantum / rajada de CPU restante              │
 │    b. Verificar se o processo solicitou E/S                     │
 │    c. Verificar se o processo terminou (exit)                   │
@@ -223,10 +220,10 @@ O simulador deve modelar obrigatoriamente os três estados clássicos de execuç
                                           │   │   │
              quantum expira (interrupção  │   │   │ solicitação de E/S
              de relógio) ─────────────────┘   │   └───────────► [BLOQUEADO]
-                     volta para PRONTO         │
-                                                │ exit() /
-                                                │ fim das rajadas
-                                                ▼
+                     volta para PRONTO        │
+                                              │ exit() /
+                                              │ fim das rajadas
+                                              ▼
                                           [TERMINADO]
 ```
 
@@ -450,4 +447,5 @@ Este documento constitui a **especificação de entrada** para a geração de c�
 
 ---
 
-*Fim do documento de especificação.*
+
+
