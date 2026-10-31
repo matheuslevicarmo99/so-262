@@ -3,10 +3,8 @@
 **Aluno:** Matheus Levi Fava do Carmo Pessoa  
 **Disciplina:** Sistemas Operacionais  
 
-## Sobre a Atividade
 Este repositório contém a implementação em Python (`bankers_algorithm.py`) do **Algoritmo dos Banqueiros** (criado por Dijkstra). O objetivo desse algoritmo é gerenciar a distribuição de recursos do sistema operacional entre vários processos, garantindo que o sistema nunca entre em *deadlock* (impasse/travamento).
 
-## O que o script faz
 O código simula um cenário com 5 processos (P0 a P4) e 3 tipos de recursos (R0, R1, R2), executando automaticamente os seguintes testes:
 
 1. **Leitura do Estado Inicial:** Mostra o total de recursos, o que já está alocado para cada processo e o que falta (necessidade).
