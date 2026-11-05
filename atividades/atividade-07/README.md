@@ -11,9 +11,3 @@ O código simula um cenário com 5 processos (P0 a P4) e 3 tipos de recursos (R0
 2. **Verificação de Estado Seguro:** Testa e prova matematicamente que o sistema consegue rodar todos os processos até o fim com os recursos disponíveis, sem travar.
 3. **Teste de Requisição Aceita:** O processo P1 pede uma quantidade de recursos que é válida e segura. O algoritmo aprova e entrega os recursos.
 4. **Teste de Requisição Negada/Bloqueada:** O processo P4 pede recursos que não estão disponíveis no momento em estoque. O algoritmo bloqueia o pedido para evitar que o sistema trave (deadlock).
-
-## Como rodar
-Para testar, basta abrir o terminal na pasta do projeto e executar:
-
-```bash
-python bankers_algorithm.py
